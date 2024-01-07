@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+.row-label {
+    height: 10vh;
+    margin: 3vh;
+    color: green;
+}
+
+.row {
+    text-align: center;
+    font-size: 10vh;
+}
+
+.result {
+    padding: 0 3vh;
+    margin: 0 3vh;
+    border: 1px solid black;
+    border-radius: 1vh;
+}
+
+.btn {
+    font-size: 5vh;
+    padding: 2vh;
+    border-radius: 1vh;
+}
+
+.error {
+    color: red;
+}
