@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çarpma işlemi</title>
+    <title>Çarpma ve bölme işlemi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Çarpma işlemi</h1>
+    <h1>Çarpma ve bölme işlemi</h1>
     <div class="row row-label">
+        <span class="no error">0</span>
         <span class="label"></span>
+        <span class="yes">0</span>
     </div>
     <div class="row">
         <span class="one"></span>
-        x
+        <select name="operation" id="operation">
+            <option value="devide">÷</option>
+            <option value="multiply">×</option>
+        </select>
         <span class="two"></span>
         =
         <span class="result" role="textbox" inputmode="numeric" pattern="[0-9]*" contenteditable></span>
