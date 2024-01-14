@@ -29,6 +29,7 @@ let startNewPrimer = () => {
 }
 
 let calculate = () => {
+    btn2Element.setAttribute('disabled', true);
     let result = selectElement.value === 'multiply' ? one * two : one;
     if (+resultElement.innerHTML === result) {
         labelElement.innerHTML = 'DOĞRU';
@@ -52,3 +53,9 @@ btn1Element.addEventListener('click', answer);
 btn2Element.addEventListener('click', calculate);
 btn3Element.addEventListener('click', startNewPrimer);
 selectElement.addEventListener('change', startNewPrimer);
+resultElement.addEventListener('keypress', (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        calculate();
+    }
+});
