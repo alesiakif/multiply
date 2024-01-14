@@ -56,6 +56,6 @@ selectElement.addEventListener('change', startNewPrimer);
 resultElement.addEventListener('keypress', (event) => {
     if (event.key === "Enter") {
         event.preventDefault();
-        calculate();
+        if (!btn2Element.hasAttribute('disabled')) calculate();
     }
 });
